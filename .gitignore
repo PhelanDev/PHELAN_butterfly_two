@@ -28,5 +28,9 @@ __pycache__/
 *.tmp
 *.log
 
+# Planning & AI artifacts
+plans/
+
 # Sensitive
 *.env
+

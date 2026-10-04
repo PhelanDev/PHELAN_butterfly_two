@@ -43,9 +43,14 @@
 
 ```
 buomv1/
-├── buomv1.ino                                       Firmware ESP32 (Flight Controller chính)
-├── index.html                                       Giao diện Web Deck (Tactical Flight Deck)
-├── server.js                                        Simulator WebSocket trên PC (dev/test)
+├── buomv1.ino                                       Khởi tạo & vòng lặp chính (Setup / Loop orchestrator)
+├── config.h                                         Cấu hình phần cứng, GPIO, tần số PWM, Wi-Fi, gói tin
+├── servo_sys.h / .cpp                               Điều khiển servo PTK 7452, lọc EMA, giới hạn an toàn
+├── flight.h / .cpp                                  Khí động học cánh vỗ, bảng LUT, bù biên độ, FreeRTOS task
+├── web_server.h / .cpp                              Wi-Fi STA/SoftAP, mDNS, WebSocket server, Telemetry
+├── web_ui.h                                         Giao diện Web Deck nhúng PROGMEM HTML/CSS/JS
+├── index.html                                       File giao diện gốc phục vụ phát triển & test offline
+├── server.js                                        Simulator WebSocket trên PC (dev/test không cần ESP32)
 ├── Dimension_A1_print_Phelan_butterfly_ 80cm.pdf    Bản vẽ thiết kế & kích thước khung cánh 80cm
 ├── .gitignore
 ├── LICENSE

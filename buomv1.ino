@@ -30,8 +30,8 @@ constexpr uint8_t SERVO_L_PIN = 5;
 constexpr uint8_t SERVO_R_PIN = 6;
 constexpr uint8_t LED_PIN = 8;
 
-// ⚠️ THAY ĐỔI SSID & MẬT KHẨU WI-FI CỦA BẠN TẠI ĐÂY
-// Để trống SSID ("") sẽ luôn chạy chế độ SoftAP tự phát Wi-Fi riêng
+// Wi-Fi credentials — change these to match your network.
+// Leave SSID empty ("") to always run in SoftAP mode.
 constexpr char WIFI_STA_SSID[] = "YourWiFiSSID";
 constexpr char WIFI_STA_PASS[] = "YourWiFiPassword";
 constexpr char MDNS_HOST[] = "phelan";
